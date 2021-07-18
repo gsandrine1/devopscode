@@ -1,7 +1,7 @@
 pipeline {
        agent any
        stages{
-           stages ( 'build'){
+           stages ('build'){
                steps{
                    echo 'build'
                    sleep 10
