@@ -15,7 +15,7 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Deploy to Tomcat'){
+        stage('Deploy One of My man Tomcat'){
             steps{
                 deploy adapters: [tomcat8(credentialsId: 'DeployerID', path: '', url: 'http://192.168.1.134:8080')], contextPath: null, war: '**/.war'
             }
