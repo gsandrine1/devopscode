@@ -16,6 +16,10 @@ pipeline {
                    sh 'mvn test'   
 
                }
+                  stage ('tomcat deploy'){
+                         steps{
+                               'deploy contextPath: 'http://192.168.1.134:8080', war: '**/*.war''
+                                                              
            }
        }
 
